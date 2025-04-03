@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">🌱 <span>FarmConnect</span></div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1>Welcome to the Farmers' Community!</h1>
+            <p>Connect, Share, and Grow Together.</p>
+            <a href="#posts-section" class="hero-btn">Explore Posts</a>
+        </section>
+
+        <!-- Section: Add Posts -->
+        <section id="create-post" class="form-container">
+            <h2>Create a New Post</h2>
+            <form id="post-form" enctype="multipart/form-data">
+                <input type="text" id="title" placeholder="Enter Post Title" required>
+                <textarea id="content" placeholder="Write your post content..." required></textarea>
+                <label for="file-upload" class="file-label">Upload File:</label>
+                <input type="file" id="file-upload" name="file-upload" accept="image/*, .pdf, .docx, .txt">
+                <button type="submit" id="submit-post">Submit Post</button>
+            </form>
+        </section>
+
+        <!-- Section: Posts List -->
+        <section id="posts-section" class="posts-section">
+            <h2>Community Posts</h2>
+            <p>Check out what others in the community are sharing:</p>
+            <div id="posts-container" class="posts-container">
+                <!-- Posts will be dynamically added here -->
+            </div>
+        </section>
+
+        <!-- Section: Live Communication -->
+        <section id="live-communication-section" class="live-chat-section">
+            <h2>Live Communication</h2>
+            <div id="chat-box" class="chat-box">
+                <div id="messages-container" class="messages-container">
+                    <p class="welcome-message">Start chatting with other farmers here!</p>
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" id="chat-input" placeholder="Type a message...">
+                    <button id="send-message">Send</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Upcoming Events -->
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 FarmConnect | Designed with ❤️ for Farmers</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
